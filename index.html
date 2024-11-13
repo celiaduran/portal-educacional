@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal Universitário</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -43,8 +43,8 @@
             <h2>Sobre a Universidade</h2>
             <p>A Universidade Alpha é uma instituição de ensino superior de excelência, comprometida com a formação de profissionais qualificados e responsáveis, preparados para enfrentar os desafios do mercado de trabalho.</p>
             <div class="about-images">
-                <img src="" alt="Imagem do Campus">
-                <img src="" alt="Estudantes na Universidade">
+                <img src="img/img_campus.webp" alt="Imagem do Campus">
+                <img src="img/img_estudantes.webp" alt="Estudantes na Universidade">
             </div>
         </div>
     </section>
@@ -56,19 +56,19 @@
             <p>Oferecemos uma ampla gama de cursos nas áreas de Tecnologia, Ciências Humanas, Saúde e Negócios, sempre com um corpo docente altamente qualificado.</p>
             <div class="course-grid">
                 <div class="course-card">
-                    <img src="" alt="Curso de Engenharia">
+                    <img src="img/engenharia.jpg" alt="Curso de Engenharia">
                     <h3>Engenharia</h3>
                 </div>
                 <div class="course-card">
-                    <img src="" alt="Curso de Direito">
+                    <img src="img/direito.webp" alt="Curso de Direito">
                     <h3>Direito</h3>
                 </div>
                 <div class="course-card">
-                    <img src="" alt="Curso de Medicina">
+                    <img src="img/medicina.jpg" alt="Curso de Medicina">
                     <h3>Medicina</h3>
                 </div>
                 <div class="course-card">
-                    <img src="" alt="Curso de Administração">
+                    <img src="img/administracao.jpg" alt="Curso de Administração">
                     <h3>Administração</h3>
                 </div>
             </div>
@@ -83,7 +83,7 @@
             <button class="btn" onclick="alert('Formulário de cadastro em desenvolvimento')">Cadastrar Aluno</button>
         </div>
     </section>
-
+    
     <!-- Painel Administrativo -->
     <section id="admin" class="section">
         <div class="container">
@@ -92,5 +92,27 @@
             <button class="btn" onclick="alert('Área administrativa em desenvolvimento')">Acessar Painel</button>
         </div>
     </section>
+
+    <!--Contato-->
+    <section id= "contact" class="section">
+        <div class="section">
+            <h2>Contatos</h2>
+            <p> Entre em conosco para mais informações </p>
+            <form>
+              <!--  <label>Nome Completo</label> -->
+                <input type=" text" placeholder="Nome Completo" required>
+                <input type=" email" placeholder="E-mail" required>
+                <textarea placeholder="Sua Mensagem" required></textarea>
+                <button type="submit" class ="btn">Enviar</button>
+
+            </form>
+        </div>
+    </section>
+    <!--Rodape-->
+    <footer>
+        <div class="container">
+        <p>&copy; 2024 Universidade Alpha - todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
