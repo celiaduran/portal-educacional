@@ -1,3 +1,4 @@
+
 /* Variáriaveis de Cores*/
 :root{
     --cor-primaria: #003366;
@@ -9,7 +10,6 @@
     --cor-sombra:rgba(0,0,0,0.1);
     --cor-sombra-hover:rgba(0,0,0,0.3);
     --titulo: 1.8em;
-
 }
 /*CSS Reset*/
 *{
@@ -18,8 +18,70 @@
     box-sizing: border-box;
 }
 boody{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
     line-height: 1,5em;
     color:var(--cor-texto);
     background-color: var(--cor-bg);
 }
+/*Cabeçalho*/
+header{
+    background-color: var(--cor-primaria);
+    color: #FFF;
+    padding: 10px, 0;
+}
+header .header-container{
+    display: flex;
+    aling-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header h1{
+    font-size: 1.8em;
+}
+nav ul{
+    list-style: none;
+    dispaly: flex;
+    gap:  15px;
+}
+nav a{
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease-in-out;
+}
+nav a:hover{
+    color: var(--cor-segundaria);
+    border-bottom: 2px, solid var(--cor-segundaria);
+
+}
+/*Banner*/
+.banner{
+   background-image: url('img/banner.jpg');
+   background-size: cover;
+   background-position: center;
+   columns: var(--cor-text-banner);
+   text-align: center;
+   padding:80px 0;
+}
+.banner-text h2{
+    font-size: 1.5em;
+}
+.banner-text p{
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+.btn{
+    background-color: var(--cor--primaria);
+    color: #FFF;
+    padding: 10px 20px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: background-color 0.3s ease-in-out;
+
+}
+ .btn:hover{
+    background-color: var(--cor-hover);
+ }
