@@ -182,10 +182,10 @@ footer{
 /*Responsivo: Ocultar em telas pequenas*/
 @media(max-width: 768px){
     .toggle-btn{
-        display:none;
+        display:block;
     }
     nav ul{
-        display: block;
+        display: none;
         flex-direction: column;
         gap: 10px;
         position: absolute;
@@ -197,5 +197,13 @@ footer{
     }
     nav ul.active{
         display: flex;
+
     }
+    .header-container{
+        justify-content: space-between;
+    }
+    .section .container p{
+        width: 75%;
+    }
+    
 }
