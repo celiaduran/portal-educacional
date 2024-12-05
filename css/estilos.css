@@ -179,31 +179,74 @@ footer{
     border: none;
     cursor: pointer;
 }
+
+/* Telas alta resolução */
+@media(max-width:1200px)
+header h1{
+  font-size: 2.3em;
+}
+nav ul a{
+    font size: 1em;
+}
+
+/*Responsivo: Ocultar em telas pequenas*/
+    @media (max-width:480px){
+      .tigle-btn{
+        display: block;
+      }
+
+    }
+/* Telas baixa resolução */
+@media(max-width: 1024px){
+    .toggle-btn[
+        display:none;
+        positon: absolute;
+        right: 20px;
+}
+header h1{
+    font-size: 1.4em;
+    width150px;
+}
+
+
+
 /*Responsivo: Ocultar em telas pequenas*/
 @media(max-width: 768px){
     .toggle-btn{
         display:block;
     }
     nav ul{
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: var(--cor--primaria);
-        padding: 20px;
-        border-radius: 8px;
-    }
-    nav ul.active{
-        display: flex;
+    display: Block;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    rigth: 20px;
+    background-color: var(--cor-primaria);
+    padding: 20px;
+    border-radius: 8px;  
+}
+.banner{
+    padding: 50px 0px 30px 0px;
+}
+.banner h2{
+    font-size: 2.1em;
+    line-height: 1em;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+.banner p{
+    margin: 50px 0px;
+}
+.section .container p{
+    width: 90% important;
+}
+form{
+    max-width: 90%;
 
-    }
-    .header-container{
-        justify-content: space-between;
-    }
-    .section .container p{
-        width: 75%;
-    }
-    
+}
+footer p{
+    font-size: 0.9em;
+}
+
 }
